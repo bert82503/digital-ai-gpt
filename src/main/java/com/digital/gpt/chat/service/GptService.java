@@ -63,7 +63,7 @@ public interface GptService {
     default ChatGptMsg doTextCompletion(
             String promptFormat, ChatGptParam param,
             Function<CompletionReq, CompletionRsp> function) {
-        return doCompletion(promptFormat, param, ModelTypeEnum.TEXT, function);
+        return this.doCompletion(promptFormat, param, ModelTypeEnum.TEXT, function);
     }
 
     /**
@@ -77,7 +77,7 @@ public interface GptService {
     default ChatGptMsg doChatCompletion(
             String promptFormat, ChatGptParam param,
             Function<CompletionReq, CompletionRsp> function) {
-        return doCompletion(promptFormat, param, ModelTypeEnum.CHAT, function);
+        return this.doCompletion(promptFormat, param, ModelTypeEnum.CHAT, function);
     }
 
     /**
@@ -92,10 +92,10 @@ public interface GptService {
     default ChatGptMsg doCompletion(
             String promptFormat, ChatGptParam param, ModelTypeEnum modelType,
             Function<CompletionReq, CompletionRsp> function) {
-        CompletionReq req = applyCompletionReq(promptFormat, param, modelType);
+        CompletionReq req = this.applyCompletionReq(promptFormat, param, modelType);
         return Optional.of(req)
                 .map(function)
-                .map(rsp -> applyChatGptMsg(req, rsp))
+                .map(rsp -> this.applyChatGptMsg(req, rsp))
                 .orElse(null);
     }
 

@@ -181,9 +181,9 @@ public class OpenAiServiceImpl implements OpenAiService<CompletionReq, Completio
                 // 消息回复异常
                 return null;
             }
-            String delimiters = properties.getDelimiters();
-            replyContent = StrUtil.replaceFirst(replyContent, delimiters, "");
-            replyContent = StrUtil.replaceLast(replyContent, delimiters, "");
+//            String delimiters = properties.getDelimiters();
+//            replyContent = StrUtil.replaceFirst(replyContent, delimiters, "");
+//            replyContent = StrUtil.replaceLast(replyContent, delimiters, "");
             String thirdPartyId = webSocketHandler.getThirdPartyId();
             return new CompletionRsp()
                     .setThirdPartyId(thirdPartyId)

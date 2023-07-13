@@ -5,7 +5,7 @@ import org.springframework.util.DigestUtils;
 import java.nio.charset.StandardCharsets;
 
 /**
- * OpenAi辅助方法
+ * OpenAI辅助方法
  *
  * @author lihuagang
  * @date 2023/5/15
