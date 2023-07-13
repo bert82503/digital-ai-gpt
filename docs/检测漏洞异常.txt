@@ -1,0 +1,262 @@
+
+存在危急漏洞,请根据PkgName找到对应包升级到最新版本
+以下为必须修复的漏洞：
+[
+  {
+    "VulnerabilityID": "CVE-2023-25330",
+    "PkgName": "com.baomidou:mybatis-plus",
+    "PkgPath": "digital-ai-gpt/libs/BOOT-INF/lib/mybatis-plus-3.5.1.jar",
+    "InstalledVersion": "3.5.1",
+    "FixedVersion": "3.5.3.1",
+    "Severity": "CRITICAL",
+    "Title": "MyBatis-Plus vulnerable to SQL injection via TenantPlugin",
+    "PublishedDate": "2023-04-05T14:15:00Z",
+    "ReplacePkgName": ""
+  },
+  {
+    "VulnerabilityID": "CVE-2023-20873",
+    "PkgName": "org.springframework.boot:spring-boot-actuator-autoconfigure",
+    "PkgPath": "digital-ai-gpt/libs/BOOT-INF/lib/spring-boot-actuator-autoconfigure-2.7.4.jar",
+    "InstalledVersion": "2.7.4",
+    "FixedVersion": "2.7.11, 3.0.6",
+    "Severity": "CRITICAL",
+    "Title": "Spring Boot Security Bypass with Wildcard Pattern Matching on Cloud Foundry",
+    "PublishedDate": "2023-04-20T21:15:00Z",
+    "ReplacePkgName": ""
+  }
+]
+
+以下为全部漏洞：
+[
+  {
+    "VulnerabilityID": "CVE-2023-25330",
+    "PkgName": "com.baomidou:mybatis-plus",
+    "PkgPath": "digital-ai-gpt/libs/BOOT-INF/lib/mybatis-plus-3.5.1.jar",
+    "InstalledVersion": "3.5.1",
+    "FixedVersion": "3.5.3.1",
+    "Severity": "CRITICAL",
+    "Title": "MyBatis-Plus vulnerable to SQL injection via TenantPlugin",
+    "PublishedDate": "2023-04-05T14:15:00Z",
+    "ReplacePkgName": ""
+  },
+  {
+    "VulnerabilityID": "CVE-2022-42003",
+    "PkgName": "com.fasterxml.jackson.core:jackson-databind",
+    "PkgPath": "digital-ai-gpt/libs/BOOT-INF/lib/jackson-databind-2.13.3.jar",
+    "InstalledVersion": "2.13.3",
+    "FixedVersion": "2.12.7.1, 2.13.4.1",
+    "Severity": "HIGH",
+    "Title": "deep wrapper array nesting wrt UNWRAP_SINGLE_VALUE_ARRAYS",
+    "PublishedDate": "2022-10-02T05:15:00Z",
+    "ReplacePkgName": ""
+  },
+  {
+    "VulnerabilityID": "CVE-2022-42004",
+    "PkgName": "com.fasterxml.jackson.core:jackson-databind",
+    "PkgPath": "digital-ai-gpt/libs/BOOT-INF/lib/jackson-databind-2.13.3.jar",
+    "InstalledVersion": "2.13.3",
+    "FixedVersion": "2.12.7.1, 2.13.4",
+    "Severity": "HIGH",
+    "Title": "use of deeply nested arrays",
+    "PublishedDate": "2022-10-02T05:15:00Z",
+    "ReplacePkgName": ""
+  },
+  {
+    "VulnerabilityID": "CVE-2023-24998",
+    "PkgName": "commons-fileupload:commons-fileupload",
+    "PkgPath": "digital-ai-gpt/libs/BOOT-INF/lib/commons-fileupload-1.4.jar",
+    "InstalledVersion": "1.4",
+    "FixedVersion": "1.5",
+    "Severity": "HIGH",
+    "Title": "FileUpload DoS with excessive parts",
+    "PublishedDate": "2023-02-20T16:15:00Z",
+    "ReplacePkgName": ""
+  },
+  {
+    "VulnerabilityID": "CVE-2022-41881",
+    "PkgName": "io.netty:netty-all",
+    "PkgPath": "digital-ai-gpt/libs/BOOT-INF/lib/netty-all-4.1.75.Final.jar",
+    "InstalledVersion": "4.1.75.Final",
+    "FixedVersion": "4.1.86",
+    "Severity": "HIGH",
+    "Title": "HAProxyMessageDecoder Stack Exhaustion DoS",
+    "PublishedDate": "2022-12-12T18:15:00Z",
+    "ReplacePkgName": ""
+  },
+  {
+    "VulnerabilityID": "CVE-2022-24823",
+    "PkgName": "io.netty:netty-all",
+    "PkgPath": "digital-ai-gpt/libs/BOOT-INF/lib/netty-all-4.1.75.Final.jar",
+    "InstalledVersion": "4.1.75.Final",
+    "FixedVersion": "4.1.77.Final",
+    "Severity": "MEDIUM",
+    "Title": "netty: world readable temporary file containing sensitive data",
+    "PublishedDate": "2022-05-06T12:15:00Z",
+    "ReplacePkgName": ""
+  },
+  {
+    "VulnerabilityID": "CVE-2022-41881",
+    "PkgName": "io.netty:netty-codec-haproxy",
+    "PkgPath": "digital-ai-gpt/libs/BOOT-INF/lib/netty-codec-haproxy-4.1.82.Final.jar",
+    "InstalledVersion": "4.1.82.Final",
+    "FixedVersion": "4.1.86.Final",
+    "Severity": "HIGH",
+    "Title": "HAProxyMessageDecoder Stack Exhaustion DoS",
+    "PublishedDate": "2022-12-12T18:15:00Z",
+    "ReplacePkgName": ""
+  },
+  {
+    "VulnerabilityID": "CVE-2022-45143",
+    "PkgName": "org.apache.tomcat.embed:tomcat-embed-core",
+    "PkgPath": "digital-ai-gpt/libs/BOOT-INF/lib/tomcat-embed-core-9.0.65.jar",
+    "InstalledVersion": "9.0.65",
+    "FixedVersion": "9.0.69",
+    "Severity": "HIGH",
+    "Title": "JsonErrorReportValve injection",
+    "PublishedDate": "2023-01-03T19:15:00Z",
+    "ReplacePkgName": ""
+  },
+  {
+    "VulnerabilityID": "CVE-2022-31197",
+    "PkgName": "org.postgresql:postgresql",
+    "PkgPath": "digital-ai-gpt/libs/BOOT-INF/lib/postgresql-42.3.4.jar",
+    "InstalledVersion": "42.3.4",
+    "FixedVersion": "42.2.26, 42.3.7, 42.4.1",
+    "Severity": "HIGH",
+    "Title": "postgresql: SQL Injection in ResultSet.refreshRow() with malicious column names",
+    "PublishedDate": "2022-08-03T19:15:00Z",
+    "ReplacePkgName": ""
+  },
+  {
+    "VulnerabilityID": "CVE-2022-41946",
+    "PkgName": "org.postgresql:postgresql",
+    "PkgPath": "digital-ai-gpt/libs/BOOT-INF/lib/postgresql-42.3.4.jar",
+    "InstalledVersion": "42.3.4",
+    "FixedVersion": "42.2.27, 42.3.8, 42.4.3, 42.5.1",
+    "Severity": "MEDIUM",
+    "Title": "Information leak of prepared statement data due to insecure temporary file permissions",
+    "PublishedDate": "2022-11-23T20:15:00Z",
+    "ReplacePkgName": ""
+  },
+  {
+    "VulnerabilityID": "CVE-2023-20873",
+    "PkgName": "org.springframework.boot:spring-boot-actuator-autoconfigure",
+    "PkgPath": "digital-ai-gpt/libs/BOOT-INF/lib/spring-boot-actuator-autoconfigure-2.7.4.jar",
+    "InstalledVersion": "2.7.4",
+    "FixedVersion": "2.7.11, 3.0.6",
+    "Severity": "CRITICAL",
+    "Title": "Spring Boot Security Bypass with Wildcard Pattern Matching on Cloud Foundry",
+    "PublishedDate": "2023-04-20T21:15:00Z",
+    "ReplacePkgName": ""
+  },
+  {
+    "VulnerabilityID": "CVE-2023-20863",
+    "PkgName": "org.springframework:spring-core",
+    "PkgPath": "digital-ai-gpt/libs/BOOT-INF/lib/spring-core-5.3.23.jar",
+    "InstalledVersion": "5.3.23",
+    "FixedVersion": "5.2.24.RELEASE, 5.3.27, 6.0.8",
+    "Severity": "HIGH",
+    "Title": "Spring Expression DoS Vulnerability",
+    "PublishedDate": "2023-04-13T20:15:00Z",
+    "ReplacePkgName": ""
+  },
+  {
+    "VulnerabilityID": "CVE-2023-20861",
+    "PkgName": "org.springframework:spring-core",
+    "PkgPath": "digital-ai-gpt/libs/BOOT-INF/lib/spring-core-5.3.23.jar",
+    "InstalledVersion": "5.3.23",
+    "FixedVersion": "5.3.26, 6.0.7, 5.2.23.RELEASE",
+    "Severity": "MEDIUM",
+    "Title": "Spring Expression DoS Vulnerability",
+    "PublishedDate": "2023-03-23T21:15:00Z",
+    "ReplacePkgName": ""
+  },
+  {
+    "VulnerabilityID": "CVE-2016-1000027",
+    "PkgName": "org.springframework:spring-web",
+    "PkgPath": "digital-ai-gpt/libs/BOOT-INF/lib/spring-web-5.3.23.jar",
+    "InstalledVersion": "5.3.23",
+    "FixedVersion": "6.0.0",
+    "Severity": "CRITICAL",
+    "Title": "spring: HttpInvokerServiceExporter readRemoteInvocation method untrusted java deserialization",
+    "PublishedDate": "2020-01-02T23:15:00Z",
+    "ReplacePkgName": ""
+  },
+  {
+    "VulnerabilityID": "CVE-2022-1471",
+    "PkgName": "org.yaml:snakeyaml",
+    "PkgPath": "digital-ai-gpt/libs/BOOT-INF/lib/snakeyaml-1.30.jar",
+    "InstalledVersion": "1.30",
+    "FixedVersion": "2.0",
+    "Severity": "CRITICAL",
+    "Title": "Constructor Deserialization Remote Code Execution",
+    "PublishedDate": "2022-12-01T11:15:00Z",
+    "ReplacePkgName": ""
+  },
+  {
+    "VulnerabilityID": "CVE-2022-25857",
+    "PkgName": "org.yaml:snakeyaml",
+    "PkgPath": "digital-ai-gpt/libs/BOOT-INF/lib/snakeyaml-1.30.jar",
+    "InstalledVersion": "1.30",
+    "FixedVersion": "1.31",
+    "Severity": "HIGH",
+    "Title": "Denial of Service due to missing nested depth limitation for collections",
+    "PublishedDate": "2022-08-30T05:15:00Z",
+    "ReplacePkgName": ""
+  },
+  {
+    "VulnerabilityID": "CVE-2022-38749",
+    "PkgName": "org.yaml:snakeyaml",
+    "PkgPath": "digital-ai-gpt/libs/BOOT-INF/lib/snakeyaml-1.30.jar",
+    "InstalledVersion": "1.30",
+    "FixedVersion": "1.31",
+    "Severity": "MEDIUM",
+    "Title": "Uncaught exception in org.yaml.snakeyaml.composer.Composer.composeSequenceNode",
+    "PublishedDate": "2022-09-05T10:15:00Z",
+    "ReplacePkgName": ""
+  },
+  {
+    "VulnerabilityID": "CVE-2022-38750",
+    "PkgName": "org.yaml:snakeyaml",
+    "PkgPath": "digital-ai-gpt/libs/BOOT-INF/lib/snakeyaml-1.30.jar",
+    "InstalledVersion": "1.30",
+    "FixedVersion": "1.31",
+    "Severity": "MEDIUM",
+    "Title": "Uncaught exception in org.yaml.snakeyaml.constructor.BaseConstructor.constructObject",
+    "PublishedDate": "2022-09-05T10:15:00Z",
+    "ReplacePkgName": ""
+  },
+  {
+    "VulnerabilityID": "CVE-2022-38751",
+    "PkgName": "org.yaml:snakeyaml",
+    "PkgPath": "digital-ai-gpt/libs/BOOT-INF/lib/snakeyaml-1.30.jar",
+    "InstalledVersion": "1.30",
+    "FixedVersion": "1.31",
+    "Severity": "MEDIUM",
+    "Title": "Uncaught exception in java.base/java.util.regex.Pattern$Ques.match",
+    "PublishedDate": "2022-09-05T10:15:00Z",
+    "ReplacePkgName": ""
+  },
+  {
+    "VulnerabilityID": "CVE-2022-38752",
+    "PkgName": "org.yaml:snakeyaml",
+    "PkgPath": "digital-ai-gpt/libs/BOOT-INF/lib/snakeyaml-1.30.jar",
+    "InstalledVersion": "1.30",
+    "FixedVersion": "1.32",
+    "Severity": "MEDIUM",
+    "Title": "Uncaught exception in java.base/java.util.ArrayList.hashCode",
+    "PublishedDate": "2022-09-05T10:15:00Z",
+    "ReplacePkgName": ""
+  },
+  {
+    "VulnerabilityID": "CVE-2022-41854",
+    "PkgName": "org.yaml:snakeyaml",
+    "PkgPath": "digital-ai-gpt/libs/BOOT-INF/lib/snakeyaml-1.30.jar",
+    "InstalledVersion": "1.30",
+    "FixedVersion": "1.32",
+    "Severity": "MEDIUM",
+    "Title": "DoS via stack overflow",
+    "PublishedDate": "2022-11-11T13:15:00Z",
+    "ReplacePkgName": ""
+  }
+]

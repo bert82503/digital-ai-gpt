@@ -1,0 +1,43 @@
+
+
+StandardWebSocketClient      : Connecting to wss://socket.yichenyufang3.com/websocket/89619549_16:666666666
+// 建立套接字会话连接
+CustomTextWebSocketHandler : connection established, session=StandardWebSocketSession[id=dabbbdd1-2c25-30e2-194d-2d3bfaa0a61b, uri=null]
+
+// 逐词返回，一个词一个词返回
+// 收到第1个词 "Open"
+CustomTextWebSocketHandler : payload={"msg":"Open","code":1,"extParam":"{\"chatId\":\"16:666666666\",\"requestId\":\"2fd50e2cd91a481eaf1f76f77b98709c\"}","id":"chatcmpl-7Gg7BW8JJbHp6uJScRX7mJnv91rJH"}
+// 收到第2个词 "AI"
+CustomTextWebSocketHandler : payload={"msg":"AI","code":1,"extParam":"{\"chatId\":\"16:666666666\",\"requestId\":\"2fd50e2cd91a481eaf1f76f77b98709c\"}","id":"chatcmpl-7Gg7BW8JJbHp6uJScRX7mJnv91rJH"}
+// 收到第3个词 " is"
+CustomTextWebSocketHandler : payload={"msg":" is","code":1,"extParam":"{\"chatId\":\"16:666666666\",\"requestId\":\"2fd50e2cd91a481eaf1f76f77b98709c\"}","id":"chatcmpl-7Gg7BW8JJbHp6uJScRX7mJnv91rJH"}
+// 收到第4个词 " an"
+CustomTextWebSocketHandler : payload={"msg":" an","code":1,"extParam":"{\"chatId\":\"16:666666666\",\"requestId\":\"2fd50e2cd91a481eaf1f76f77b98709c\"}","id":"chatcmpl-7Gg7BW8JJbHp6uJScRX7mJnv91rJH"}
+// 收到第5个词 " artificial"
+CustomTextWebSocketHandler : payload={"msg":" artificial","code":1,"extParam":"{\"chatId\":\"16:666666666\",\"requestId\":\"2fd50e2cd91a481eaf1f76f77b98709c\"}","id":"chatcmpl-7Gg7BW8JJbHp6uJScRX7mJnv91rJH"}
+// 收到第6个词 " intelligence"
+CustomTextWebSocketHandler : payload={"msg":" intelligence","code":1,"extParam":"{\"chatId\":\"16:666666666\",\"requestId\":\"2fd50e2cd91a481eaf1f76f77b98709c\"}","id":"chatcmpl-7Gg7BW8JJbHp6uJScRX7mJnv91rJH"}
+// 收到第7个词 " research"
+CustomTextWebSocketHandler : payload={"msg":" research","code":1,"extParam":"{\"chatId\":\"16:666666666\",\"requestId\":\"2fd50e2cd91a481eaf1f76f77b98709c\"}","id":"chatcmpl-7Gg7BW8JJbHp6uJScRX7mJnv91rJH"}
+// 收到第8个词 " laboratory"
+CustomTextWebSocketHandler : payload={"msg":" laboratory","code":1,"extParam":"{\"chatId\":\"16:666666666\",\"requestId\":\"2fd50e2cd91a481eaf1f76f77b98709c\"}","id":"chatcmpl-7Gg7BW8JJbHp6uJScRX7mJnv91rJH"}
+// 收到第9个词 " consisting"
+CustomTextWebSocketHandler : payload={"msg":" consisting","code":1,"extParam":"{\"chatId\":\"16:666666666\",\"requestId\":\"2fd50e2cd91a481eaf1f76f77b98709c\"}","id":"chatcmpl-7Gg7BW8JJbHp6uJScRX7mJnv91rJH"}
+// 收到第10个词 " of"
+CustomTextWebSocketHandler : payload={"msg":" of","code":1,"extParam":"{\"chatId\":\"16:666666666\",\"requestId\":\"2fd50e2cd91a481eaf1f76f77b98709c\"}","id":"chatcmpl-7Gg7BW8JJbHp6uJScRX7mJnv91rJH"}
+// 收到第11个词 " the"
+CustomTextWebSocketHandler : payload={"msg":" the","code":1,"extParam":"{\"chatId\":\"16:666666666\",\"requestId\":\"2fd50e2cd91a481eaf1f76f77b98709c\"}","id":"chatcmpl-7Gg7BW8JJbHp6uJScRX7mJnv91rJH"}
+// "【超出最大单次回复字数】该提示由GPT官方返回，非我司限制，请缩减回复字数"
+CustomTextWebSocketHandler : payload={"msg":"【超出最大单次回复字数】该提示由GPT官方返回，非我司限制，请缩减回复字数","code":1,"extParam":"{\"chatId\":\"16:666666666\",\"requestId\":\"2fd50e2cd91a481eaf1f76f77b98709c\"}","id":"chatcmpl-7Gg7BW8JJbHp6uJScRX7mJnv91rJH"}
+// 消息已接收完毕 "[DONE]"
+CustomTextWebSocketHandler : payload={"msg":"[DONE]","code":1,"extParam":"{\"chatId\":\"16:666666666\",\"requestId\":\"2fd50e2cd91a481eaf1f76f77b98709c\"}","id":"chatcmpl-7Gg7BW8JJbHp6uJScRX7mJnv91rJH"}
+
+// 完整的消息结果：OpenAI is an artificial intelligence research laboratory consisting of the
+CustomTextWebSocketHandler : messageResult=OpenAI is an artificial intelligence research laboratory consisting of the
+// 关闭连接中
+NativeWebSocketSession         : Closing StandardWebSocketSession[id=dabbbdd1-2c25-30e2-194d-2d3bfaa0a61b, uri=null]
+// 执行耗时
+TextServiceImpl            : text completions execute time, totalTime=2457
+// 关闭连接
+CustomTextWebSocketHandler : connection closed, session=StandardWebSocketSession[id=dabbbdd1-2c25-30e2-194d-2d3bfaa0a61b, uri=null], status=CloseStatus[code=1000, reason=null]
+

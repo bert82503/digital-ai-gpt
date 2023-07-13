@@ -1,0 +1,24 @@
+
+
+2023-05-16 11:58:11.411 DEBUG 6592[21-56083-exec-5] o.s.w.s.c.s.StandardWebSocketClient      : Connecting to wss://socket.yichenyufang3.com/websocket/89619549_16:666666666
+2023-05-16 11:58:11.820  INFO 6592[penai.gpt.text1] c.s.d.a.g.w.s.CustomTextWebSocketHandler : connection established, session=StandardWebSocketSession[id=dabbbdd1-2c25-30e2-194d-2d3bfaa0a61b, uri=null]
+
+2023-05-16 11:58:13.187  INFO 6592[ient-SecureIO-1] c.s.d.a.g.w.s.CustomTextWebSocketHandler : payload={"msg":"Open","code":1,"extParam":"{\"chatId\":\"16:666666666\",\"requestId\":\"2fd50e2cd91a481eaf1f76f77b98709c\"}","id":"chatcmpl-7Gg7BW8JJbHp6uJScRX7mJnv91rJH"}
+2023-05-16 11:58:13.220  INFO 6592[ient-SecureIO-1] c.s.d.a.g.w.s.CustomTextWebSocketHandler : payload={"msg":"AI","code":1,"extParam":"{\"chatId\":\"16:666666666\",\"requestId\":\"2fd50e2cd91a481eaf1f76f77b98709c\"}","id":"chatcmpl-7Gg7BW8JJbHp6uJScRX7mJnv91rJH"}
+2023-05-16 11:58:13.385  INFO 6592[ient-SecureIO-1] c.s.d.a.g.w.s.CustomTextWebSocketHandler : payload={"msg":" is","code":1,"extParam":"{\"chatId\":\"16:666666666\",\"requestId\":\"2fd50e2cd91a481eaf1f76f77b98709c\"}","id":"chatcmpl-7Gg7BW8JJbHp6uJScRX7mJnv91rJH"}
+2023-05-16 11:58:13.388  INFO 6592[ient-SecureIO-1] c.s.d.a.g.w.s.CustomTextWebSocketHandler : payload={"msg":" an","code":1,"extParam":"{\"chatId\":\"16:666666666\",\"requestId\":\"2fd50e2cd91a481eaf1f76f77b98709c\"}","id":"chatcmpl-7Gg7BW8JJbHp6uJScRX7mJnv91rJH"}
+2023-05-16 11:58:13.417  INFO 6592[ient-SecureIO-1] c.s.d.a.g.w.s.CustomTextWebSocketHandler : payload={"msg":" artificial","code":1,"extParam":"{\"chatId\":\"16:666666666\",\"requestId\":\"2fd50e2cd91a481eaf1f76f77b98709c\"}","id":"chatcmpl-7Gg7BW8JJbHp6uJScRX7mJnv91rJH"}
+2023-05-16 11:58:13.476  INFO 6592[ient-SecureIO-1] c.s.d.a.g.w.s.CustomTextWebSocketHandler : payload={"msg":" intelligence","code":1,"extParam":"{\"chatId\":\"16:666666666\",\"requestId\":\"2fd50e2cd91a481eaf1f76f77b98709c\"}","id":"chatcmpl-7Gg7BW8JJbHp6uJScRX7mJnv91rJH"}
+2023-05-16 11:58:13.547  INFO 6592[ient-SecureIO-1] c.s.d.a.g.w.s.CustomTextWebSocketHandler : payload={"msg":" research","code":1,"extParam":"{\"chatId\":\"16:666666666\",\"requestId\":\"2fd50e2cd91a481eaf1f76f77b98709c\"}","id":"chatcmpl-7Gg7BW8JJbHp6uJScRX7mJnv91rJH"}
+2023-05-16 11:58:13.618  INFO 6592[ient-SecureIO-1] c.s.d.a.g.w.s.CustomTextWebSocketHandler : payload={"msg":" laboratory","code":1,"extParam":"{\"chatId\":\"16:666666666\",\"requestId\":\"2fd50e2cd91a481eaf1f76f77b98709c\"}","id":"chatcmpl-7Gg7BW8JJbHp6uJScRX7mJnv91rJH"}
+2023-05-16 11:58:13.685  INFO 6592[ient-SecureIO-1] c.s.d.a.g.w.s.CustomTextWebSocketHandler : payload={"msg":" consisting","code":1,"extParam":"{\"chatId\":\"16:666666666\",\"requestId\":\"2fd50e2cd91a481eaf1f76f77b98709c\"}","id":"chatcmpl-7Gg7BW8JJbHp6uJScRX7mJnv91rJH"}
+2023-05-16 11:58:13.748  INFO 6592[ient-SecureIO-1] c.s.d.a.g.w.s.CustomTextWebSocketHandler : payload={"msg":" of","code":1,"extParam":"{\"chatId\":\"16:666666666\",\"requestId\":\"2fd50e2cd91a481eaf1f76f77b98709c\"}","id":"chatcmpl-7Gg7BW8JJbHp6uJScRX7mJnv91rJH"}
+2023-05-16 11:58:13.828  INFO 6592[ient-SecureIO-1] c.s.d.a.g.w.s.CustomTextWebSocketHandler : payload={"msg":" the","code":1,"extParam":"{\"chatId\":\"16:666666666\",\"requestId\":\"2fd50e2cd91a481eaf1f76f77b98709c\"}","id":"chatcmpl-7Gg7BW8JJbHp6uJScRX7mJnv91rJH"}
+2023-05-16 11:58:13.830  INFO 6592[ient-SecureIO-1] c.s.d.a.g.w.s.CustomTextWebSocketHandler : payload={"msg":"【超出最大单次回复字数】该提示由GPT官方返回，非我司限制，请缩减回复字数","code":1,"extParam":"{\"chatId\":\"16:666666666\",\"requestId\":\"2fd50e2cd91a481eaf1f76f77b98709c\"}","id":"chatcmpl-7Gg7BW8JJbHp6uJScRX7mJnv91rJH"}
+2023-05-16 11:58:13.838  INFO 6592[ient-SecureIO-1] c.s.d.a.g.w.s.CustomTextWebSocketHandler : payload={"msg":"[DONE]","code":1,"extParam":"{\"chatId\":\"16:666666666\",\"requestId\":\"2fd50e2cd91a481eaf1f76f77b98709c\"}","id":"chatcmpl-7Gg7BW8JJbHp6uJScRX7mJnv91rJH"}
+
+2023-05-16 11:58:13.839  INFO 6592[ient-SecureIO-1] c.s.d.a.g.w.s.CustomTextWebSocketHandler : messageResult=OpenAI is an artificial intelligence research laboratory consisting of the
+2023-05-16 11:58:13.849 DEBUG 6592[21-56083-exec-5] o.s.w.s.a.NativeWebSocketSession         : Closing StandardWebSocketSession[id=dabbbdd1-2c25-30e2-194d-2d3bfaa0a61b, uri=null]
+2023-05-16 11:58:13.850  INFO 6592[21-56083-exec-5] c.s.d.a.g.s.i.TextServiceImpl            : text completions execute time, totalTime=2457
+2023-05-16 11:58:13.852  INFO 6592[ient-SecureIO-1] c.s.d.a.g.w.s.CustomTextWebSocketHandler : connection closed, session=StandardWebSocketSession[id=dabbbdd1-2c25-30e2-194d-2d3bfaa0a61b, uri=null], status=CloseStatus[code=1000, reason=null]
+

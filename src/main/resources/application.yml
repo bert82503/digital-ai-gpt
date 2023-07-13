@@ -1,0 +1,121 @@
+
+spring:
+  application:
+    name: digital-ai-gpt
+  config:
+    center:
+      enabled: true # 会在 com.xxxxxx.common.tools.config.SpringPropertySource 中去拿配置中心的配置
+  servlet:
+    multipart:
+      max-file-size: 8MB
+      max-request-size: 16MB
+  mvc:
+    format:
+      date: 'yyyy-MM-dd'
+      date-time: 'yyyy-MM-dd HH:mm:ss'
+    dispatch-trace-request: true
+  jackson:
+    default-property-inclusion: NON_NULL # https://www.cnblogs.com/woshimrf/p/LocalDate-serialize-json-springboot.html
+    serialization.WRITE_DATES_AS_TIMESTAMPS: false
+  datasource:
+    confKey: ${sm.conf.MAIN_DB:xxx_xxx}
+    type: com.alibaba.druid.pool.DruidDataSource
+    druid:
+      stat-view-servlet.enabled: false
+      web-stat-filter.enabled: false
+      filters: stat,slf4j
+      maxActive: 20
+      initialSize: 1
+      maxWait: 60000
+      minIdle: 1
+      timeBetweenEvictionRunsMillis: 60000
+      minEvictableIdleTimeMillis: 300000
+      validationQuery: select 'x'
+      testWhileIdle: true
+      testOnBorrow: false
+      testOnReturn: false
+      poolPreparedStatements: true
+      maxPoolPreparedStatementPerConnectionSize: 20
+      maxOpenPreparedStatements: 20
+      useGlobalDataSourceStat: false
+      connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=1000
+
+server:
+  port: 56789
+  tomcat:
+    threads:
+      max: 200
+      min-spare: 10
+    accesslog: # https://tomcat.apache.org/tomcat-9.0-doc/config/valve.html#Access_Logging
+      enabled: true
+      pattern: "%{begin:yyyy-MM-dd HH:mm:ss.SSS}t  '%h %l %u' [%I] '\"%r\" %s %bB' '%Dms %Fms'"
+      prefix: tomcat_access
+      directory: "/data/logs/${spring.application.name}/"
+
+mybatis-plus:
+  executor-type: reuse
+  configuration:
+    map-underscore-to-camel-case: true
+    default-statement-timeout: 30
+  global-config:
+    db-config:
+      id-type: auto
+
+logging:
+  config: classpath:log4j2-${spring.profiles.active:online}.xml
+
+rpc:
+  center-uri:
+    - ${rpc.center.uri}
+  scanBasePackages:
+    - com.digital.gpt.chat.rpc
+  request-timeout-mills: 300000
+
+# AI GPT
+ai:
+  gpt:
+    openai:
+      app-id: 89619549
+      secret: '5d0e27c3a43946d988b976604b96462b'
+      context: 3
+      max-tokens: 3000
+      delimiters: '```'
+      connection-timeout: 3s
+      request-timeout: 3m
+      text:
+        prompt:
+          continuous-write: "你是作家，你的任务是对用户输入的内容生成接龙的文本。\n\n
+                             续写补全下面的内容，使用```符号分隔，最多一句话，最多使用200个字。\n\n
+                             内容: "
+          rewrite-polish: "你是作家，你的任务是对用户输入的内容生成改写的文本。\n\n
+                           润色下面的内容，使用```符号分隔，最多使用500个字。\n\n
+                           内容: "
+          expand-write: "你是作家，你的任务是对用户输入的内容生成一个较长的扩展的文本。\n\n
+                         扩写下面的内容，使用```符号分隔，最多生成一段话，最多使用%d个字。\n\n
+                         内容: "
+          help-write: "你是作家，你的任务是对用户输入的内容生成一篇较长的文章。\n\n
+                       帮写下面的内容为一篇较长的文章，内容使用```符号分隔，文章最多使用2000个字。\n\n
+                       输出标题和答案。\n\n
+                       内容: "
+          extract-topic: ""
+          infer-title: "你是作家，你的任务是对用户输入的关键词内容生成5个不同的简短的%s风格的标题。\n\n
+                        推理下面的内容为标题，内容使用```符号分隔，要求输出的标题字数不超过20个字。\n\n
+                        内容: "
+          list-outline: "你是作家，你的任务是对用户输入的内容生成一个的文章大纲。\n\n
+                         罗列关于下面的内容的文章大纲，内容使用```符号分隔，大纲最多使用200个字。\n\n
+                         格式化答案。\n\n
+                         内容: "
+      chat:
+        prompt:
+          rewrite-polish: "你是作家，你的任务是对用户输入的内容生成改写的文本。\n\n
+                           润色下面的内容，使用```符号分隔，最多使用500个字。\n\n
+                           内容: "
+          generate-summary: "你是作家，你的任务是对用户输入的聊天对话内容生成一个简短的摘要。\n\n
+                             总结概括下面的内容，使用```符号分隔，最多使用%d个字。\n\n
+                             内容: "
+          regenerate-summary: "你是作家，你的任务是对用户输入的聊天对话内容重新生成一个简短的摘要。\n\n
+                               总结概括下面的内容，使用```符号分隔，最多使用%d个字。\n\n
+                               内容: "
+          translate: "你是翻译家，你的任务是对用户输入的内容生成转换的文本。\n\n
+                      翻译下面的内容为%s，使用```符号分隔。\n\n
+                      内容: "
